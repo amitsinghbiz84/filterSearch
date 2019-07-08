@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<form id="form" action="" method="POST" class="form">
+    <label for="firstname">
+      First Name <input type="text" id="firstname" name="firstname" >
+      <span  id='nameError'></span>
+    </label>
+
+    <label for="lastname">
+      Last Name <input type="text" id="lastname" name="lastname">
+      <span  id='lastError'></span>
+    </label>
+
+    <label for="phone">
+        Phone <input type="text" id="phone" name="phone">
+        <span  id='phoneError'></span>        
+    </label>
+
+    <label for="email">
+        Email <input type="text" id="email" name="email">
+        <span  id='emailError'></span>
+    </label>    
+
+    <label for="password">
+        Password <input type="password" id="password" name="password">
+        <span  id='passwordError'></span>
+    </label>
+    <button type="submit" class="form__btn" id="" disabled>Submit</button>
+</form>
+
+<script src="js/form.min.js"></script>
+
+</body>
+
+</html>

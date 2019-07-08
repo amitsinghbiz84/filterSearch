@@ -1,0 +1,9 @@
+@import 'global/normalize';
+@include normalize();
+@import 'global/variables';
+@import 'global/color';
+@import 'global/mixing';
+@import 'global/layout';
+@import 'card/card';
+@import 'components/plp';
+@import 'components/form.scss';

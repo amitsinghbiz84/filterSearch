@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PLP - product listing page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<!-- <header></header> -->
+<main>
+  <div class="fluid-container">
+    <section class="container">
+      <div class="plp">
+        <section class="plp__top">
+          <h2><span class="plp__cardcount"></span> Result</h2>
+          <aside>
+              <strong id="changeView" ><span id="grid" class="active">Grid View</span>/<span id="list">List View</span></strong>              
+              <select id="plpfilter">
+                <option value="-1">Filter by : Rating</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>            
+              </select>
+            </section>
+          </aside>
+        <article id="viewChange" class="plp__cardcontainer"></article>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- <footer></footer> -->
+<script src="js/card.min.js"></script>
+</body>
+
+</html>

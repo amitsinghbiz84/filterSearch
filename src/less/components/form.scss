@@ -1,0 +1,18 @@
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 100px;
+    padding: 0 20px;
+    label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    input {
+        min-height: 30px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+}

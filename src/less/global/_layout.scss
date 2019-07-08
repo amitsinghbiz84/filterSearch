@@ -1,0 +1,30 @@
+.fluid-container {
+    width: 100%;
+    background: $grey;
+}
+.container {
+    margin: 0 auto;
+    padding: 32px 20px;
+    @include tablet {
+        padding: 32px 40px;  
+    }
+    @include desktop {
+        padding: 32px 80px;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    color: $black;
+}

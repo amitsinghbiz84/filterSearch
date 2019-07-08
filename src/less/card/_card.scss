@@ -1,0 +1,65 @@
+.card {
+    margin-bottom: 35px;
+    position: relative;
+    background: $white;
+    @include box-shadow(1px,7px,10px,#eaeaea);
+    a {
+        display: block;
+    }
+    &__fav {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: url(../images/sprite.png) no-repeat -25px 0;
+        right: 10px;
+        top: 10px;
+        &.false {
+            background-position: -25px -53px
+        }
+    }    
+    &__details {
+        padding: 15px;
+        &--rating {
+            background: url(#{$image-path}/sprite.png) no-repeat 0 -111px;
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            overflow: hidden;
+            line-height: 122px;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            &.star4 {
+                width: 80px;
+            }
+            &.star3 {
+                width: 60px;
+            }
+            &.star2 {
+                width: 40px;
+            }
+            &.star1 {
+                width: 20px;
+            }
+        }        
+    }
+    &__price {
+        strong {
+            font-size: rem(30px);
+            color: $secondary-color;
+        }
+        del {
+            margin-right: 10px;
+            color: $grey-dark;
+        }
+        span {
+            color: $primary-color;
+        }
+         
+    }
+    h3 {
+        font-size: rem(18px);
+        color: $secondary-color;
+    }
+}   

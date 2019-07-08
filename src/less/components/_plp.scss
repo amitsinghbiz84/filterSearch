@@ -1,0 +1,65 @@
+.plp {
+    &__cardcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 35px;
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &.list {
+            grid-template-columns: 1fr;
+           a {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           } 
+        }
+    }
+    &__top {
+        display: flex;
+        margin-bottom: 35px;
+        justify-content: space-between;
+        align-items: baseline;                      
+        @include tablet {
+            width: 100%;
+            align-items: baseline;
+            flex-direction: row;
+        }
+        select {
+            line-height: 17px;            
+            height: 43px;
+            max-width: 100%;
+            @include tablet {
+                max-width: 160px;
+            }
+            @include desktop {
+                max-width: 200px;
+                width: 60%;
+            }
+        }
+        aside {
+            text-align: right;
+            width: 60%;
+            @include desktop {
+                width: 50%;
+            }
+            span{
+                padding: 0 7px;
+                font-weight: normal;
+                &.active {
+                    font-weight: 900;
+                }                
+            }
+            strong {
+                display: none;
+                @include tablet {
+                    display: inline-block;
+                }
+
+            }
+        }        
+    }
+}
+

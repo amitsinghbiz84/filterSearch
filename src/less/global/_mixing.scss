@@ -1,0 +1,29 @@
+// Function for convert PX to REM
+@function rem($pixels, $context: $base-font-size) {
+    @if (unitless($pixels)) {
+      $pixels: $pixels * 1px;
+    }
+  
+    @if (unitless($context)) {
+      $context: $context * 1px;
+    }
+  
+    @return $pixels / $context * 1rem;
+  }
+
+  // Mixing For Shadow 
+  @mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }
